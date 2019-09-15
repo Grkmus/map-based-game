@@ -1,0 +1,15 @@
+body {
+    padding: 10px;
+}
+#map {
+    width: 100%;
+    height: 70vh;
+    margin: 0px;
+}
+.sidebar {
+    position: relative!important;
+}
+.row .card {
+    margin-bottom: 10px;
+    margin-right: 5px;
+}

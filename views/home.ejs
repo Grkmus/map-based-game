@@ -1,0 +1,107 @@
+<% include ./partials/header %>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="/chainage" method="GET">
+      <input class="form-control mr-sm-2" name="km" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<hr>
+<div class="container-fluid">
+	<div class="row">
+    
+    <div class="col-9">
+    	<div id="map" class="map card"></div>
+    </div>
+    
+    <div class="col-3">
+      <div class="row card">  
+        <img class="card-img-top" src="" alt="Card image cap">
+        <div class="card-body">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Alignments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Structure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Station</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <ul class="list-group">
+                <ul class="list-group list-group-item">ASIA
+                  <li class="list-group-item">IBR-MAL</li>
+                  <li class="list-group-item">MAL-PEN</li>
+                </ul>
+                <ul class="list-group list-group-item">EUROPE
+                  <li class="list-group-item">KAZ-YSK</li>
+                  <li class="list-group-item">YSK-HAL</li>
+                </ul>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  <form id="getChainage">
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="km" name="km" placeholder="km">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-lg btn-primary btn-block">
+                    </div>
+                  </form>
+
+            </div>
+          </div>
+          <h4 class="card-title">Card title</h4>
+          <input id="cekbox" type="checkbox" name="Turnouts" value="Turnouts" checked>
+          <label for="cekbox">Alignments</label>
+          <input id="cekbox" type="checkbox" name="Turnouts" value="Turnouts" checked>
+          <label for="cekbox">HOs</label>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="row card">  
+        <img class="card-img-top" src="" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="row card">  
+        <img class="card-img-top" src="" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<% include ./partials/footer %>
+
